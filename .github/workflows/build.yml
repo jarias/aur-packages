@@ -142,13 +142,13 @@ jobs:
           BUCKET: arch.menari.io
           REPO: menari
 
-  build-obs-vl4l2sink:
+  build-obs-v4l2sink:
     runs-on: ubuntu-latest
     needs:
       - build-zrepl
     steps:
       - name: checkout
-        run: git clone https://aur.archlinux.org/obs-vl4l2sink.git $GITHUB_WORKSPACE
+        run: git clone https://aur.archlinux.org/obs-v4l2sink.git $GITHUB_WORKSPACE
 
       - name: build package
         uses: jarias/makepkg-action@v1
